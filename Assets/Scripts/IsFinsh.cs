@@ -13,7 +13,11 @@ public class IsFinsh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //디버깅용
+        if (Input.GetKey(KeyCode.F12))
+        {
+            SceneManager.LoadScene("Round2_1");
+        }
     }
 
     private void OnTriggerEnter(Collider other)

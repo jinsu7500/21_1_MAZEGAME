@@ -19,6 +19,8 @@ public class RadarTelePort : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CharacterController cc = Player.GetComponent<CharacterController>();
+            _GM.isRoundClear += 1;
+            Debug.Log(_GM.isRoundClear);
 
             cc.enabled = false;
             Player.transform.position = teleportPos.transform.position;
